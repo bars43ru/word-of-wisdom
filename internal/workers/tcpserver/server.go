@@ -8,7 +8,7 @@ import (
 	"net"
 	"time"
 
-	"quote-book/pkg/pow"
+	"word-of-wisdom/pkg/pow"
 )
 
 const (

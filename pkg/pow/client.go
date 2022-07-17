@@ -4,7 +4,7 @@ import (
 	"context"
 	"io"
 
-	"quote-book/pkg/hashcash"
+	"word-of-wisdom/pkg/hashcash"
 )
 
 type Client struct {

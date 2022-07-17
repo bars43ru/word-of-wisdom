@@ -5,7 +5,7 @@ import (
 	"os"
 
 	"github.com/urfave/cli/v2"
-	"quote-book/internal/workers/tcpclient"
+	"word-of-wisdom/internal/workers/tcpclient"
 )
 
 func main() {

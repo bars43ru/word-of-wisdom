@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"io"
 
-	"quote-book/pkg/hashcash"
+	"word-of-wisdom/pkg/hashcash"
 )
 
 type Server struct {

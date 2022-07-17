@@ -6,8 +6,8 @@ import (
 	"os"
 
 	"github.com/urfave/cli/v2"
-	"quote-book/internal/service/quotes"
-	"quote-book/internal/workers/tcpserver"
+	"word-of-wisdom/internal/service/quotes"
+	"word-of-wisdom/internal/workers/tcpserver"
 )
 
 func main() {

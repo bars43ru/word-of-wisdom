@@ -8,5 +8,5 @@ import (
 
 func Test_WithComplexity(t *testing.T) {
 	s := New(WithComplexity(5))
-	assert.Equal(t, uint(5), s.complexity)
+	assert.Equal(t, uint8(5), s.complexity)
 }
