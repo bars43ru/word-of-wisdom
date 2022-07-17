@@ -51,7 +51,7 @@ func (s *Server) Run(ctx context.Context) error {
 }
 
 func (s *Server) loopAcceptingConn(ctx context.Context, listener *net.TCPListener) <-chan *net.TCPConn {
-	log.Println("listen accept tcp connection")
+	log.Println("listen accept tcp connection", listener.Addr().String())
 	ch := make(chan *net.TCPConn)
 	go func() {
 		for ctx.Err() == nil {

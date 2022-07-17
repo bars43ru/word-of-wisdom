@@ -1,0 +1,23 @@
+version: '3.7'
+
+services:
+  server:
+    build:
+      context: ../..
+      dockerfile: ./build/local/docker/server.Dockerfile
+    container_name: word-of-wisdom-server
+    environment:
+      ADDR: ":12345"
+      COMPLEXITY: "5"
+    expose:
+      - '12345'
+
+  client:
+    build:
+      context: ../..
+      dockerfile: ./build/local/docker/client.Dockerfile
+    container_name: word-of-wisdom-client
+    environment:
+      HOST: "server:12345"
+    depends_on:
+      - server
