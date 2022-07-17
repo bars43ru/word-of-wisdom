@@ -20,7 +20,7 @@ collection of the quotes.
 Запуск сервера:
 
 ```
-go run ./cmd/server/ --addr=:12898 --complexity=6
+go run ./cmd/server/ --addr=:12345 --complexity=6
 ```
 
 - `addr` (`ADDR`) адрес порта на котором запустится TCP сервер
