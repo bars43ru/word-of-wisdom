@@ -30,6 +30,9 @@ func main() {
 			},
 		},
 		Action: func(ctx *cli.Context) error {
+			log.Println("param addr", ctx.String("addr"))
+			log.Println("param complexity", ctx.Int("complexity"))
+
 			addr, err := net.ResolveTCPAddr("tcp", ctx.String("addr"))
 			if err != nil {
 				log.Fatal("resolve tcp address", err)
