@@ -1,4 +1,4 @@
-# Quote book
+# Word of Wisdom
 
 Test task for Server Engineer
 
