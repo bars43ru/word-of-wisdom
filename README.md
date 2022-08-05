@@ -12,6 +12,9 @@ the challenge-response protocol should be used.
 collection of the quotes.  
 • Docker file should be provided both for the server and for the client that solves the POW challenge
 
+## Фитбэк
+Смущает то, как реализована конкурентность в сервере. Сильно упрощенный протокол (соединение закрывается с случае ошибки) - нет возможности послать solution в другом соединении. Использовал 3rd-party библиотеку для работы с флагами, но в тестовом хотелось бы видеть максимум примитивов.
+
 ## Пример запуска
 
 Данные о настройках можно передать как через параметры командной строки,
